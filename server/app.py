@@ -12,20 +12,20 @@ CORS(app, resources={r'/*': {'origins': '*'}})
 BOOKS = [
     {
         'id': uuid.uuid4().hex,
-        'title': 'On the Road',
-        'author': 'Jack Kerouac',
+        'title': 'Book11',
+        'author': 'Book11',
         'read': True
     },
     {
         'id': uuid.uuid4().hex,
-        'title': 'Harry Potter and the Philosopher\'s Stone',
-        'author': 'J. K. Rowling',
+        'title': 'Book22',
+        'author': 'Book22',
         'read': False
     },
     {
         'id': uuid.uuid4().hex,
-        'title': 'Green Eggs and Ham',
-        'author': 'Dr. Seuss',
+        'title': 'Book33',
+        'author': 'Book33',
         'read': True
     }
 ]
