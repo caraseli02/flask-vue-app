@@ -4,7 +4,7 @@ services:
 
 variables:
   DOCKER_DRIVER: overlay
-  HEROKU_APP_NAME: flask-vue-vlad
+  HEROKU_APP_NAME: <APP_NAME>
   HEROKU_REGISTRY_IMAGE: registry.heroku.com/${HEROKU_APP_NAME}/web
 
 stages:
@@ -20,3 +20,4 @@ docker-build:
         "."
     - docker login -u _ -p $HEROKU_AUTH_TOKEN registry.heroku.com
     - docker push $HEROKU_REGISTRY_IMAGE
+    - ./release.sh
